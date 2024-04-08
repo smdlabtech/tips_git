@@ -2,6 +2,16 @@
 Les meilleurs astuces git
 
 
+## Les commandes les plus fréquentes
+
+- Utilisez les commandes suivantes lorsque vous voulez faire un *"commit"* depuis votre dépôt local vers celui distant.
+  ```
+  git add .
+  git commit -m "Votre message de commit"
+  git push origin main
+  ```
+
+
 # Compilation des Commandes Git
 
 Ce document regroupe et organise les commandes Git discutées, offrant une référence complète pour la gestion de projets avec Git.
@@ -122,17 +132,6 @@ Ce document regroupe et organise les commandes Git discutées, offrant une réf�
 - Effectuez des commits fréquents avec des messages descriptifs pour une meilleure traçabilité et collaboration.
 
 - Utilisez des branches pour organiser les fonctionnalités, corrections, et expérimentations, fusionnez régulièrement pour minimiser les conflits.
-
----
-
-## Bonus
-
-- Utilisez les commandes suivantes lorsque vous voulez faire un *"commit"* depuis votre dépôt local vers celui distant.
-  ```
-  git add .
-  git commit -m "Votre message de commit"
-  git push origin main
-  ```
 
 ---
 Ce document vise à servir de référence rapide pour les commandes Git essentielles et avancées, facilitant la gestion efficace des projets de développement.
