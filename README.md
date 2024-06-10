@@ -133,5 +133,30 @@ Ce document regroupe et organise les commandes Git discutées, offrant une réf�
 
 - Utilisez des branches pour organiser les fonctionnalités, corrections, et expérimentations, fusionnez régulièrement pour minimiser les conflits.
 
+# Gestion de fichiers volumineux (en cas de problèmes)
+
+ ```git
+# Installer et initialiser Git LFS
+git lfs install
+
+## Suivre les fichiers volumineux
+git lfs track "*.dll"
+git lfs track "*.lib"
+
+# Ajouter et commiter les fichiers suivis par Git LFS
+git add .gitattributes
+git add .env_win/Lib/site-packages/llvmlite/binding/llvmlite.dll
+git add .env_win/Library/bin/mkl_avx512.2.dll
+git add .env_win/Library/bin/mkl_core.2.dll
+git add .env_win/Library/bin/mkl_intel_thread.2.dll
+git add .env_win/Library/bin/mkl_pgi_thread.2.dll
+git add .env_win/Lib/site-packages/torch/lib/torch_cpu.dll
+git add .env_win/Lib/site-packages/torch/lib/dnnl.lib
+git commit -m "Add large files with Git LFS"
+
+# Pousser les modifications vers le dépôt distant
+git push origin main
+ ```
+
 ---
 Ce document vise à servir de référence rapide pour les commandes Git essentielles et avancées, facilitant la gestion efficace des projets de développement.
