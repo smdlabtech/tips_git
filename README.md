@@ -133,6 +133,9 @@ Ce document regroupe et organise les commandes Git discutées, offrant une réf�
 
 - Utilisez des branches pour organiser les fonctionnalités, corrections, et expérimentations, fusionnez régulièrement pour minimiser les conflits.
 
+# Gestion de conflits repo locla VS repo distant
+
+
 # Gestion de fichiers volumineux (en cas de problèmes)
 
  ```git
